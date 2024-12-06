@@ -1,112 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>html prectical</title>
+    <title>Comprehensive Student Information Form</title>
 </head>
+
 <body>
-  <!-- <div id="hedding">
-    <h1>
-        hedding1
-    </h1>
-    <h2>
-        hedding1
-    </h2>
-    <h3>
-        hedding1
-    </h3>
-    <h4>
-        hedding1
-    </h4>
-    <h5>
-        hedding1
-    </h5>
-<h6>
-    hedding1
-</h6>
-
-  </div>
-  <div id="peragraph">
-    <p>A paragraph is a group of sentences that develops a single idea. Paragraphs are a fundamental part of any piece of writing that is longer than a few sentences. They help the reader understand the structure of the<u> writing </u>and grasp its main points. </p>
-  </div>
-  <div>
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, impedit?
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem mollitia, sed ex accusantium dolorem voluptatem amet tempore odio commodi perspiciatis alias ad impedit distinctio sapiente iste ab vero provident non!
-    Fugiat dicta, ipsa beatae magni fugit corrupti? Mollitia harum sunt, deserunt dolorem, magnam molestias eveniet necessitatibus voluptatum maxime at dolore tempore quaerat ut nesciunt soluta nihil laudantium. Accusamus, nesciunt architecto.
-    Vel accusantium ipsum maxime inventore suscipit ab eligendi aspernatur nostrum enim reprehenderit fugiat quia sapiente cum, veniam autem consequatur voluptatem! Ex recusandae non optio eveniet ea incidunt magnam minima numquam!
-    Similique eligendi voluptate velit? Nostrum, blanditiis laborum voluptatum necessitatibus autem doloremque voluptates debitis omnis deleniti dolore obcaecati? Sed distinctio non reiciendis mollitia facilis veritatis aliquam fuga ut natus, quia vel!
-    Inventore eveniet voluptatem, necessitatibus et, at rerum repudiandae deleniti facere, veritatis natus porro. Optio dolores at fugit modi quas, nam excepturi minus numquam nemo, architecto ad, magni labore id cum.
-
-  </div> -->
-  <div id="img">
-    <img src="Screenshot 2024-07-16 141803.png" width="600px">
-
-  </div>
-  <div id="vid" controls>
-<video src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWSruTBvhdO4vCw5RkWG7mExNtt2stXzcouQ&s"></video>
-
-  </div>
-  <div id="aud" >
-    <audio src="" controls></audio>
-  </div>
-  <div id="form">
-    <h1> form </h1>
-    <form action="google.com">
-        <label for="fname">name</label>
-        <input type="text" id="fname" name="abc">
+    <h1>Comprehensive Student Information Form</h1>
+    <form>
+<div>
+        <label for="name">Name: </label>
+        <input type="text" id="name" name="name" title="Only letters and spaces allowed">
         <br>
-        <label for="mail">email</label>
-        <input type="text">
         <br>
-        <label for="mail">mobile</label>
-        <input type="number">
-        <br>
-        <label for="mail">address</label>
-        <input type="text">
         
+        <label for="class">Course: </label>
+        <select id="class" name="class" required>
+            <option value="" disabled selected>Select your course</option>
+            <option value="1">B.tech</option>
+            <option value="2">Bca</option>
+            <option value="3">Bba</option>
+            <option value="4">Mba</option>
+            <option value="4">polytechnic</option>
+        </select>
         <br>
-        <label for="options">slect any one</label>
         <br>
-        <label for="1">first</label>
-        <input type="checkbox" name="options1">
-        <label for="1">second</label>
-        <input type="checkbox" name="options2">
-        <label for="1">third</label>
-        <input type="checkbox" name="options">
-      <br>
-      <input type="submit">
-        
 
+        <label for="section">Section: </label>
+        <input type="text" id="section" name="section">
+        <br>
+        <br>
 
+        <label for="year">Year: </label>
+        <input type="number" id="year" name="year" min="1" max="4" required>
+        <br>
+        <br>
+
+        <label for="branch">Branch: </label>
+        <select id="branch" name="branch" required>
+            <option value="" disabled selected>Select your branch</option>
+            <option value="Computer Science">Computer Science</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Civil">Civil</option>
+        </select>
+        <br>
+        <br>
+        <label for="university">University: </label>
+        <input type="text" id="university" name="university" placeholder="Enter your university name" required>
+        <br>
+        <br>
+
+        <label for="college">College: </label>
+        <input type="text" id="college" name="college" value="SR Group of Institutions" readonly>
+        <br>
+        <br>
+
+        <label for="passingOutYear">Passing Out Year: </label>
+        <input type="month" id="passingOutYear" name="passingOutYear" required>
+        <br>
+        <br>
+
+        <label for="resume">Upload Resume : </label>
+        <input type="file" id="resume" name="resume" accept=".pdf, .doc" required>
+        <br>
+        <br>
+       
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+        <button  > <a href="rs.html">form2</a></button>
+</div>
     </form>
-  </div>
-  <table border="1">|
-    <tr>
-        <th>S.NO</th>
-        <th>name</th>
-        <th>section</th>
-    </tr>
-    <tr>
-        <td>01</td>
-        <td>ajay</td>
-        <td>A</td>
-    </tr>
-    <tr>
-        <td>02</td>
-        <td>vijay</td>
-        <td>b</td>
-    </tr>
-  </table>
-  <ol>
-    <ul type="square">
-    <li>hii</li>
-    <li>hii</li>
-    <li>hii</li>
-    <li>hii</li>
-    <li>hii</li>
-</ul>
-  </ol>
-
 </body>
+
 </html>

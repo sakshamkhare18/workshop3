@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-container {
+            width: 50%;
+            margin: auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 2px 2px 10px #aaa;
+        }
+        .form-container h2 {
+            text-align: center;
+        }
+        .form-container label {
+            display: inline-block;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        .form-container input, .form-container select, .form-container textarea {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: calc(100% - 120px);
+        }
+        .form-container input[type="radio"], .form-container input[type="checkbox"] {
+            width: auto;
+        }
+        .form-container button {
+            margin: 5px 5px 0 0;
+            padding: 10px 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Personal Info</h2>
+        <form>
+            <label for="sno">S.No.</label>
+            <input type="text" id="sno" name="sno" value="234" readonly><br>
+            
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name"><br>
+            
+            <label for="fname">F'Name</label>
+            <input type="text" id="fname" name="fname"><br>
+            
+            <label>Gender</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            
+            <label>Hobbies</label>
+            <input type="checkbox" id="singing" name="hobbies" value="singing">
+            <label for="singing">Singing</label>
+            <input type="checkbox" id="dancing" name="hobbies" value="dancing">
+            <label for="dancing">Dancing</label>
+            <input type="checkbox" id="cooking" name="hobbies" value="cooking">
+            <label for="cooking">Cooking</label><br>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email"><br>
+            
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password"><br>
+            
+            <label for="mobile">Mobile</label>
+            <input type="tel" id="mobile" name="mobile"><br>
+            
+            <label for="dob">DOB</label>
+            <input type="date" id="dob" name="dob"><br>
+            
+            <label for="upload">Upload pic</label>
+            <input type="file" id="upload" name="upload"><br>
+            
+            <label for="city">City</label>
+            <select id="city" name="city">
+                <option value="">--select city--</option>
+                <option value="city1">jhansi</option>
+                <option value="city2">gurgaon</option>
+                <option value="city3">mumbai</option>
+            </select><br>
+            
+            <label for="address">Address</label>
+            <textarea id="address" name="address" rows="3"></textarea><br>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            <button type="button" onclick="window.print()">Print</button>
+        </form>
+    </div>
+</body>
+</html>
