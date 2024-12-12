@@ -1,0 +1,49 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  .hero-section {
+    position: relative;
+    height: 100vh;
+    background: url('https://images.livemint.com/img/2020/11/05/original/GettyImages-450207051_1604550010143_1604550039459.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .overlay {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 10px;
+  }
+
+  .title {
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    letter-spacing: 0.9rem;
+  }
+
+  .explore-btn {
+    text-decoration: none;
+    color: #ffffff;
+    background: transparent;
+    border: 2px solid #ffffff;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .explore-btn:hover {
+    background: #ffffff;
+    color: #000;
+  }
+  
